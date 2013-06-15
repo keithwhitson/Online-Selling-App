@@ -1,5 +1,4 @@
 
-
 // VERSION: 2.2 LAST UPDATE: 13.03.2012
 /* 
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
