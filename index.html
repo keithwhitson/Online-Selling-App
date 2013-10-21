@@ -95,12 +95,17 @@
     function onFail(message) {
       alert('Failed because: ' + message);
     }
+    
+    function getFile(){
+    	alert("you want to get a file");
+    }
 
     </script>
   </head>
   <body>
   	
     <button onclick="capturePhoto();">Capture Photo</button> 
+    <button onclick="getFile()">get a file</button>
     <!--This is a comment. Comments are not displayed in the browser<br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
