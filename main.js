@@ -12,12 +12,17 @@
     
     function gotFS(fileSystem){
     	alert("filesystem successful");
+    	fileSystem.root.getFile("readme.txt",{create: true, exclusive: false},gotFileEntry, onFail);
+    }
+    
+    function gotFileEntry(fileEntry){
+    	alert("fileEntry was successful");
     }
 	
 	// Called if something bad happens.
     // 
     function onFail(message) {
-      alert('Failed because: ' + message);
+      alert('Finding File Failed');
     }
     
     function getFile(){
