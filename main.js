@@ -17,7 +17,7 @@
     
     function gotFileEntry(fileEntry){
     	alert("fileEntry was successful");
-    	fileEntry.file(gotFiile,onFail);
+    	fileEntry.file(gotFile,onFail);
     }
     
     function gotFile(file){
