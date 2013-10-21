@@ -1,5 +1,4 @@
-var pictureSource;   // picture source
-    var destinationType; // sets the format of returned value 
+
 
     // Wait for Cordova to connect with the device
     //
@@ -8,18 +7,14 @@ var pictureSource;   // picture source
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
-        pictureSource=navigator.camera.PictureSourceType;
-        destinationType=navigator.camera.DestinationType;
         window.requestFileSystem(LocalFileSystem.PERSISTENT,0,gotFS,onFail);
     }
     
     function gotFS(fileSystem){
     	alert("filesystem successful");
     }
-
-
-
-    // Called if something bad happens.
+	
+	// Called if something bad happens.
     // 
     function onFail(message) {
       alert('Failed because: ' + message);
@@ -27,6 +22,5 @@ var pictureSource;   // picture source
     
     function getFile(){
     	alert("you want to get a file");
-    	
-    }
+   }
 
