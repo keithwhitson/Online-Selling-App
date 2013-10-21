@@ -17,6 +17,11 @@
     
     function gotFileEntry(fileEntry){
     	alert("fileEntry was successful");
+    	fileEntry.file(gotFiile,onFail);
+    }
+    
+    function gotFile(){
+    	alert("gotFile successful");
     }
 	
 	// Called if something bad happens.
