@@ -34,7 +34,7 @@
     		alert(evt.target.result);
     	};
     	
-    	reader.readAsDataUrl(file);
+    	reader.readAsDataURL(file);
     }
     
     function readAsText(file){
@@ -45,7 +45,7 @@
     		alert(evt.target.result);
     	};
     	
-    	reader.readAsText(file);
+    	reader.readDataAsText(file);
     }
 	
 	// Called if something bad happens.
