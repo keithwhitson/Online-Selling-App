@@ -22,6 +22,28 @@
     
     function gotFile(file){
     	alert("gotFile successful");
+    	readDataUrl(file);
+    	readAsText(file);
+    }
+    
+    function readDataUrl(file){
+    	var reader = new Reader();
+    	reader.onloadend = function(evt){
+    		alert("Read as data URL");
+    		alert(evt.target.result);
+    	};
+    	
+    	reader.readAsDataUrl(file);
+    }
+    
+    function readDataUrl(file){
+    	var reader = new Reader();
+    	reader.onloadend = function(evt){
+    		alert("Read as data Text");
+    		alert(evt.target.result);
+    	};
+    	
+    	reader.readAsText(file);
     }
 	
 	// Called if something bad happens.
