@@ -12,7 +12,7 @@
     
     function gotFS(fileSystem){
     	alert("filesystem successful");
-    	fileSystem.root.getFile("readme.txt",{create: true, exclusive: false},gotFileEntry, onFail);
+    	fileSystem.root.getFile("readme.txt",null,gotFileEntry, onFail);
     }
     
     function gotFileEntry(fileEntry){
@@ -20,7 +20,7 @@
     	fileEntry.file(gotFiile,onFail);
     }
     
-    function gotFile(){
+    function gotFile(file){
     	alert("gotFile successful");
     }
 	
