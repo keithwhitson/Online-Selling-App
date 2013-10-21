@@ -23,7 +23,7 @@
     function gotFile(file){
     	alert("gotFile successful");
     	readDataUrl(file);
-    	readAsText(file);
+    	readText(file);
     }
     
     function readDataUrl(file){
@@ -37,7 +37,7 @@
     	reader.readAsDataURL(file);
     }
     
-    function readAsText(file){
+    function readText(file){
     	alert("readastext function is being called");
     	var reader = new FileReader();
     	reader.onloadend = function(evt){
