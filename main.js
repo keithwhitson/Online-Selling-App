@@ -45,7 +45,7 @@
     		alert(evt.target.result);
     	};
     	
-    	reader.readDataAsText(file);
+    	reader.readAsText(file);
     }
 	
 	// Called if something bad happens.
