@@ -27,7 +27,8 @@
     }
     
     function readDataUrl(file){
-    	var reader = new Reader();
+    	alert("readdateurl function is being called");
+    	var reader = new FileReader();
     	reader.onloadend = function(evt){
     		alert("Read as data URL");
     		alert(evt.target.result);
@@ -36,8 +37,9 @@
     	reader.readAsDataUrl(file);
     }
     
-    function readDataUrl(file){
-    	var reader = new Reader();
+    function readAsText(file){
+    	alert("readastext function is being called");
+    	var reader = new FileReader();
     	reader.onloadend = function(evt){
     		alert("Read as data Text");
     		alert(evt.target.result);
