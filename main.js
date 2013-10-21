@@ -10,6 +10,11 @@ var pictureSource;   // picture source
     function onDeviceReady() {
         pictureSource=navigator.camera.PictureSourceType;
         destinationType=navigator.camera.DestinationType;
+        window.requestFileSystem(LocalFileSystem.PERSISTENT,0,gotFS,onFail);
+    }
+    
+    function gotFS(fileSystem){
+    	alert("filesystem successful");
     }
 
     // Called when a photo is successfully retrieved
@@ -85,5 +90,6 @@ var pictureSource;   // picture source
     
     function getFile(){
     	alert("you want to get a file");
+    	
     }
 
